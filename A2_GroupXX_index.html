@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Logistics Fleet & Inventory Tracking Project</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header>
+  <h1>IoT Fleet & Inventory Tracking System</h1>
+  <p>Scenario D — Integrated project management website for a logistics company implementing IoT-based fleet tracking and warehouse inventory across its depot network while integrating with an ageing ERP system.</p>
+</header>
+<nav>
+<a href="#s1">1 Overview</a><a href="#s2">2 Schedule & Cost</a><a href="#s3">3 Risk & Stakeholders</a>
+<a href="#s4">4 Quality & Team</a><a href="#s5">5 Tracking & Dashboard</a><a href="#s6">6 Recommendation</a>
+</nav>
+<main>
+<section class="section" id="s1"><h2>1. Project Overview, Charter & Scope</h2>
+<div class="grid">
+<div class="card"><h3>Business Problem</h3><p>Fragmented fleet and warehouse visibility can delay vehicle monitoring, stock reconciliation and operational decisions. The ageing ERP must remain operational while new IoT capability is introduced.</p></div>
+<div class="card"><h3>Proposed Solution</h3><p>Deploy vehicle IoT trackers, warehouse readers/sensors and a central tracking layer integrated with the existing ERP through controlled interfaces.</p></div>
+<div class="card"><h3>Purpose</h3><p>Improve fleet visibility, inventory accuracy and operational decision-making without replacing the existing ERP during this project.</p></div>
+</div>
+<h3>Project Charter</h3>
+<table><tr><th>Item</th><th>Project Position</th></tr>
+<tr><td>Sponsor</td><td>Executive Operations Sponsor (planning assumption)</td></tr>
+<tr><td>Project Manager</td><td>Logistics Technology Project Manager (planning assumption)</td></tr>
+<tr><td>Development approach</td><td><b>Hybrid.</b> Predictive planning controls procurement, infrastructure, integration gates and rollout; iterative configuration, interface prototyping and testing reduce technical uncertainty.</td></tr>
+<tr><td>Objectives</td><td>Reliable fleet visibility; ≥99% inventory transaction accuracy; approved ERP integration; controlled pilot and network rollout; training, handover and benefits measurement within baseline.</td></tr>
+<tr><td>Deliverables</td><td>Charter/plans, IoT architecture, vehicle devices, warehouse IoT configuration, ERP interfaces, cleansed data, tested pilot, training, rollout and handover.</td></tr>
+<tr><td>In scope</td><td>Assumed 5 depots and 120 vehicles; IoT equipment; integration; configuration; testing; training; pilot and rollout.</td></tr>
+<tr><td>Out of scope</td><td>ERP replacement, predictive-maintenance analytics in initial release, customer mobile app, expansion beyond assumed depot network.</td></tr>
+<tr><td>Constraints</td><td>Ageing ERP, operational continuity, assumed 26-week window, A$560,000 planning baseline and limited installation windows.</td></tr>
+<tr><td>Success criteria</td><td>≥95% valid fleet location records; ≥99% inventory accuracy; ≥99.5% interface success; zero Severity-1 defects at go-live; ≥90% training completion.</td></tr></table>
+<figure><img src="assets/wbs.png" alt="Work Breakdown Structure"><figcaption>Figure 1. Work Breakdown Structure. Work packages connect directly to the schedule and Trello tracking.</figcaption></figure>
+</section>
+
+<section class="section" id="s2"><h2>2. Schedule, Cost & Resources</h2>
+<p>The schedule moves through initiation, requirements, IoT design/procurement, ERP integration, warehouse configuration, integrated testing, pilot, training, rollout and closure. Key decision milestones are <b>Baseline Approved</b>, <b>Pilot Accepted</b> and <b>Network Go-Live</b>.</p>
+<p>The ERP interface prototype is a significant dependency because integrated testing and pilot deployment rely on stable data exchange with the ageing ERP. The genuine ProjectLibre file should be used to confirm the critical path. A critical-activity delay can move dependent milestones unless available float or an approved recovery action absorbs the delay.</p>
+<div class="placeholder"><b>Insert genuine ProjectLibre Gantt + Critical Path screenshot here</b><br>Use the submitted A2_GroupXX_ProjectLibre.pod output.</div>
+<h3>Cost & Resources</h3>
+<table><tr><th>Area</th><th>Planning Basis</th></tr>
+<tr><td>Baseline</td><td>A$560,000 assumed academic planning baseline.</td></tr>
+<tr><td>Human resources</td><td>Project Manager, IoT/Network Engineer, ERP Integration Developer, Warehouse Systems Specialist, QA/Test Lead and Training/Change Lead.</td></tr>
+<tr><td>Other major costs</td><td>120 assumed vehicle devices, warehouse IoT equipment, cloud/software/integration licences and deployment contingency.</td></tr>
+<tr><td>Cost relationship</td><td>Longer integration or rollout activities increase specialist labour and can extend software/vendor costs. Resource assignments therefore link schedule performance directly to cost performance.</td></tr></table>
+</section>
+
+<section class="section" id="s3"><h2>3. Risk, Stakeholder & Communication Management</h2>
+<p>Risks use a 1–5 likelihood and impact scale. Score = likelihood × impact. The three highest planning priorities are ERP integration incompatibility (20), IoT connectivity gaps (16) and inventory data mismatch (16).</p>
+<table><tr><th>ID</th><th>Risk</th><th>L</th><th>I</th><th>Score</th><th>Owner</th><th>Response / Mitigation</th></tr>
+<tr><td>R1</td><td>Legacy ERP integration incompatibility</td><td>4</td><td>5</td><td>20</td><td>ERP Integration Lead</td><td>Mitigate — prototype early, middleware, rollback plan.</td></tr>
+<tr><td>R2</td><td>IoT connectivity gaps</td><td>4</td><td>4</td><td>16</td><td>IoT Engineer</td><td>Coverage survey, multi-network SIMs, store-and-forward.</td></tr>
+<tr><td>R3</td><td>Cybersecurity/privacy breach</td><td>3</td><td>5</td><td>15</td><td>Security Lead</td><td>Encryption, RBAC, MFA and security testing.</td></tr>
+<tr><td>R4</td><td>Device installation delays</td><td>3</td><td>4</td><td>12</td><td>Deployment Lead</td><td>Staged installation and spare devices.</td></tr>
+<tr><td>R5</td><td>Inventory data mismatch</td><td>4</td><td>4</td><td>16</td><td>Warehouse Systems Lead</td><td>Cleanse, reconcile and validate before cutover.</td></tr>
+<tr><td>R6</td><td>User resistance / low adoption</td><td>3</td><td>4</td><td>12</td><td>Change Lead</td><td>Engagement, champions, training and support.</td></tr>
+<tr><td>R7</td><td>Vendor supply/hardware delay</td><td>3</td><td>3</td><td>9</td><td>Procurement Lead</td><td>SLA, alternatives and buffer stock.</td></tr>
+<tr><td>R8</td><td>Integration-driven budget overrun</td><td>3</td><td>5</td><td>15</td><td>Project Manager</td><td>Cost tracking, change control and contingency.</td></tr>
+<tr><td>R9</td><td>Operational disruption at cutover</td><td>2</td><td>5</td><td>10</td><td>Operations Manager</td><td>Pilot, off-peak cutover and rollback.</td></tr>
+<tr><td>R10</td><td>Inaccurate GPS/sensor data</td><td>3</td><td>3</td><td>9</td><td>QA Lead</td><td>Calibration, thresholds and exception monitoring.</td></tr></table>
+<figure><img src="assets/power-interest.png" alt="Power Interest Matrix"><figcaption>Figure 2. Stakeholder Power–Interest Matrix.</figcaption></figure>
+<p>Close management is required for the sponsor, Project Manager, depot/operations managers and IT/ERP team. Drivers and warehouse staff require regular involvement because adoption and usability influence benefits. Communication combines fortnightly governance, weekly operational readiness, twice-weekly technical coordination, vendor meetings, training briefings and monthly cost reporting.</p>
+</section>
+
+<section class="section" id="s4"><h2>4. Quality, Change & Team Management</h2>
+<table><tr><th>Quality Measure</th><th>Target</th><th>Measurement</th><th>Owner</th></tr>
+<tr><td>Fleet location validity</td><td>≥95%</td><td>Pilot route/data-quality comparison</td><td>IoT Engineer</td></tr>
+<tr><td>Inventory transaction accuracy</td><td>≥99%</td><td>Cycle-count reconciliation</td><td>Warehouse Systems Lead</td></tr>
+<tr><td>ERP interface success</td><td>≥99.5%</td><td>Integration logs/exceptions</td><td>ERP Integration Lead</td></tr>
+<tr><td>System availability</td><td>≥99.5%</td><td>Monitoring dashboard</td><td>Technical Lead</td></tr>
+<tr><td>Critical defects at go-live</td><td>0 Severity-1</td><td>Defect register/release gate</td><td>QA Lead</td></tr>
+<tr><td>Training readiness</td><td>≥90%</td><td>Training records/competency check</td><td>Change Lead</td></tr></table>
+<h3>Change Control</h3>
+<table><tr><th>Change</th><th>Impact</th><th>Decision</th><th>Reason</th></tr>
+<tr><td>Predictive-maintenance analytics in initial release</td><td>High scope; +4 weeks; approx. +A$70k</td><td>Deferred</td><td>Valuable but not required for core release.</td></tr>
+<tr><td>Multi-network SIM capability</td><td>Low/medium scope; +1 week; approx. +A$18k</td><td>Approved</td><td>Directly reduces high-priority connectivity risk.</td></tr>
+<tr><td>Replace legacy ERP during project</td><td>Very high scope; +4–6 months; A$400k+</td><td>Rejected</td><td>Outside project objective and changes the risk/budget profile.</td></tr></table>
+<p>The RACI assigns governance accountability to the sponsor, delivery coordination to the Project Manager and execution responsibility to technical specialists, QA and change roles. This keeps approval authority separate from specialist delivery.</p>
+</section>
+
+<section class="section" id="s5"><h2>5. Project Tracking & Dashboard</h2>
+<p><b>Trello workflow:</b> Backlog → To Do → In Progress → Review/Testing → Done. Card names should match WBS work packages and ProjectLibre activities so that the board shows execution of the approved plan.</p>
+<div class="placeholder"><b>Insert genuine Trello board screenshot here</b><br>Show task owners, deadlines, priorities and movement across the workflow.</div>
+<h3>Project Dashboard</h3>
+<div class="grid">
+<div class="card"><b>Overall</b><br><span class="status">AMBER</span></div>
+<div class="card"><b>Schedule</b><br>AMBER — integration/pilot path requires close control.</div>
+<div class="card"><b>Cost</b><br>GREEN — A$560,000 planning baseline.</div>
+<div class="card"><b>Scope</b><br>GREEN — core scope stable; predictive analytics deferred.</div>
+<div class="card"><b>Quality</b><br>AMBER — connectivity and integration are key gates.</div>
+<div class="card"><b>Planning Progress</b><br>42% illustrative planning status; replace with actual evidence.</div>
+</div>
+<p class="note"><b>Management action:</b> complete an early ERP integration prototype and connectivity survey before fleet-wide deployment. Use the pilot depot as a release gate and approve rollout only after critical defects are closed and reconciliation/availability targets are met.</p>
+</section>
+
+<section class="section" id="s6"><h2>6. Integration & Final Management Recommendation</h2>
+<div class="flow">Charter → Scope → WBS → ProjectLibre Schedule → Trello → Costs / Risks / Changes → Stakeholders & Team → Dashboard → Management Decisions</div>
+<p>The project is viable if rollout remains stage-gated. Its strongest expected achievement is integrated fleet and inventory visibility without requiring immediate ERP replacement. The most significant risk is legacy ERP integration, and the most important schedule concern is delay to integration/testing before the pilot. Operational managers and frontline users require close engagement because disruption or low adoption would reduce benefits.</p>
+<p>Management should complete the ERP prototype, connectivity survey and pilot acceptance before authorising network-wide rollout. Quality gates should prevent rollout until interface reliability, inventory accuracy and critical-defect targets are achieved. Expected business value includes faster operational decisions, improved stock accuracy, better fleet visibility and a stronger data foundation for future optimisation.</p>
+<p class="note"><b>Assumption notice:</b> depot count, fleet size, project duration, budget, resource rates and illustrative progress/status were not supplied in the scenario. They are academic planning assumptions and should be validated by the group. Replace illustrative status with genuine project evidence before final submission.</p>
+</section>
+</main>
+<footer>Assessment 2 — Scenario D: Logistics Fleet and Inventory Tracking. Add group details only in the private evidence submission where required.</footer>
+</body></html>
